@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="stlyle.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Temperature Converter</h1>
+
+    <input type="number" id="tempInput" placeholder="Enter temperature">
+
+    <select id="unit">
+       <option value="cToF">Celsius → Fahrenheit</option>
+       <option value="fToC">Fahrenheit → Celsius</option>
+       <option value="cToK">Celsius → Kelvin</option>
+       <option value="kToC">Kelvin → Celsius</option>
+       <option value="fToK">Fahrenheit → Kelvin</option>
+       <option value="kToF">Kelvin → Fahrenheit</option>
+    </select>
+
+    <button onclick="convertTemp()">Convert</button>
+
+    <p id="result"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
